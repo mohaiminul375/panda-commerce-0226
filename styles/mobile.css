@@ -1,0 +1,124 @@
+/* Mobile Device (up to 640px) */
+@media screen and (max-width:640px) {
+
+    /* navbar */
+    img {
+        width: 90px;
+    }
+
+    .hamb-menu {
+        width: 40px;
+    }
+
+    /* banner */
+    #banner-container {
+        padding: 0 20px;
+        background: #FEEAE9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    #banner-container h2 {
+        font-size: 36px;
+    }
+
+    #banner-container h6 {
+        font-size: 10px;
+        color: #4E4E4E;
+        font-weight: 400;
+    }
+
+    #banner-price {
+        color: #FF136F;
+    }
+
+
+    #banner-container img {
+        display: block;
+
+        margin: auto;
+    }
+
+    .category-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+    }
+
+    #card-container {
+        margin-top: 20px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* btn */
+    .btn-primary {
+        background: #FF136F;
+        padding: 8px 15px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 12px;
+    }
+
+    /* newsletter */
+    .newsletter-container h3 {
+        font-size: 20px;
+    }
+
+    .newsletter-container p {
+        font-size: 12px;
+        margin: 8px 0px;
+        color: #707070;
+    }
+
+    #input-group {
+        display: flex;
+    }
+
+    #input-group input {
+        padding: 8px;
+        width: 200px;
+        border-radius: 5px 0 0 5px;
+    }
+}
+
+/* Small Mobile / Portrait (up to 320px) */
+@media screen and (max-width:320px) {
+
+    /* navbar */
+    img {
+        width: 90px;
+    }
+
+    .hamb-menu {
+        width: 40px;
+    }
+
+    /* newsletter */
+    /* newsletter */
+    .newsletter-container h3 {
+        font-size: 18px;
+    }
+
+    .newsletter-container p {
+        font-size: 11px;
+        margin: 8px 0px;
+        color: #707070;
+    }
+
+    #input-group {
+        display: flex;
+    }
+
+    #input-group input {
+        padding: 8px;
+        width: 150px;
+        border-radius: 5px 0 0 5px;
+    }
+}

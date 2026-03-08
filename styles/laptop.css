@@ -1,0 +1,38 @@
+/* Responsive */
+/* Laptop Device (up to 1200px) */
+@media screen and (max-width:1200px) {
+    body {
+        padding: 0 20px;
+    }
+
+    /* card */
+    #card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: contain;
+        display: block;
+    }
+
+    .card {
+        text-align: center;
+        border: 2px solid gray;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .btn-card {
+        margin-top: auto;
+    }
+}
