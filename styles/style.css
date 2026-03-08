@@ -184,7 +184,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    height: 50px;
+    min-height: 50px;
     background: #adacac;
     color: black;
     text-align: center;
