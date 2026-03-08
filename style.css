@@ -9,6 +9,7 @@
 
 body {
     max-width: 1320px;
+    /* for my own laptop*/
     margin: auto;
 }
 
@@ -55,11 +56,11 @@ nav {
 }
 
 /* category */
-#category {
+#category, #backpack, #shoes {
     margin-top: 100px;
 }
 
-#category>h1 {
+#category>h1, #shoes>h1, #backpack>h1 {
     margin-bottom: 10px;
     font-size: 40px;
 }
@@ -70,7 +71,7 @@ nav {
     gap: 20px;
 }
 
-.category {
+.category-card {
     color: white;
     font-size: 30px;
     padding: 20px;
@@ -82,9 +83,55 @@ nav {
     align-items: center;
 }
 
-.category h5 {
+.category-card h5 {
     font-weight: 400;
 }
+
+/* shoes product*/
+
+
+#card-container {
+    margin-top: 20px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.card {
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.card-title, .card-price {
+    font-size: 24px;
+}
+
+.card-price {
+    margin-bottom: 15px;
+}
+
+.card-description {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #4E4E4E;
+}
+
+.btn-card {
+    margin-top: 10px;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 /* img {
     width: 100px;
@@ -149,10 +196,21 @@ nav {
         width: 70px;
         display: block;
     }
+
+    /* card */
+    #card-container {
+        margin-top: 20px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
 }
 
 /* Mobile Device (up to 640px) */
 @media screen and (max-width:640px) {
+
+    /* navbar */
     img {
         width: 90px;
     }
@@ -187,14 +245,6 @@ nav {
         color: #FF136F;
     }
 
-    .btn-primary {
-        background: #FF136F;
-        padding: 8px 15px;
-        border-radius: 10px;
-        border: none;
-        color: white;
-        font-size: 12px;
-    }
 
     #banner-container img {
         display: block;
@@ -207,10 +257,30 @@ nav {
         gap: 20px;
 
     }
+
+    #card-container {
+        margin-top: 20px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    /* btn */
+    .btn-primary {
+        background: #FF136F;
+        padding: 8px 15px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 12px;
+    }
 }
 
 /* Small Mobile / Portrait (up to 320px) */
 @media screen and (max-width:320px) {
+
+    /* navbar */
     img {
         width: 90px;
     }
